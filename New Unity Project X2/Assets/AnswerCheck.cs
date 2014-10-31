@@ -1,17 +1,20 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 
 public class AnswerCheck : MonoBehaviour {
 	public int [,] Answer = new int[3,3]{
-		{1,7,4},
-		{2,8,5},
-		{3,9,6}
+		{1,2,3},
+		{7,8,9},
+		{4,5,6}
 	};
 	StoreState storestate;
 	private GameObject wakuwaku;
-
+	DropMe dropme;
+	public Color falseColor = Color.red;
+	private Image DragIcons;
 
 	// Use this for initialization
 	public void OnClick () {
@@ -27,6 +30,15 @@ public class AnswerCheck : MonoBehaviour {
 				Debug.Log (Answer[i,j]+" vs " + storestate.posMatrix[i,j]);
 				if(Answer[i,j] == storestate.posMatrix[i,j]){
 					correct++;
+
+					//間違っている場合色を変える
+				}else{
+					Debug.Log ("AAA" + storestate.dragIcons[i,j]);
+
+					if(storestate.posMatrix[i,j] != 0){
+						DragIcons = storestate.dragIcons[i,j].GetComponent<Image>();
+						DragIcons.color = falseColor;
+					}
 				}
 			}
 		}

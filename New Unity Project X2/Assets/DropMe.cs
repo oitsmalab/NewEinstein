@@ -12,8 +12,9 @@ public class DropMe : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPointe
 		public Color highlightColor = Color.yellow;
 		public GameObject dragObject;//DropされるべきGameObject
 		public GameObject thisObject;
+		
 		DragMe dragme;
-	StoreState storestate;
+		StoreState storestate;
 
 		private GameObject wakuwaku;
 
@@ -30,7 +31,7 @@ public class DropMe : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPointe
 		
 		public void OnDrop(PointerEventData data)
 		{
-		Debug.Log(data.pointerDrag.tag);
+		//Debug.Log(data.pointerDrag.tag);
 
 			if(data.pointerDrag.tag == thisObject.tag){
 				containerImage.color = normalColor;
@@ -50,12 +51,17 @@ public class DropMe : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPointe
 
 			wakuwaku = GameObject.Find("wakuwakusan");
 			storestate = wakuwaku.GetComponent<StoreState>();
-			storestate.posMatrix[posX, posY] = dragme.ID;
 
-			Debug.Log("posX  = "+posX);
+
+			/*storestate.posMatrix[posX, posY] = dragme.ID;*/
+			storestate.posMatrix[posY, posX] = dragme.ID;
+			storestate.dragIcons[posY,posX] = dragIcon;
+
+			/*Debug.Log("posX  = "+posX);
 			Debug.Log("posY = "+posY);
 			Debug.Log("ID = "+dragme.ID);
 			Debug.Log("posMatrixs(ID) = "+storestate.posMatrix[posX,posY]);
+			Debug.Log(dragIcon);*/
 
 			}
 		}
