@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class Hint : MonoBehaviour{
 	public int HintID = 0;
 	public GameObject Text;
+	private GameObject hinttext;
 	
 	public void OnClick(){
 
@@ -17,12 +18,16 @@ public class Hint : MonoBehaviour{
 		if(HintID == 1){
 			Debug.Log("XXX");
 
-			GameObject Hint1Text = Instantiate (Text, new Vector3(1, -251, 0), transform.rotation) as GameObject;
+			GameObject Hint1Text = Instantiate (Text) as GameObject;
 
 			var canvas = FindInParents<Canvas>(gameObject);
 			Hint1Text.transform.SetParent (canvas.transform, false);
 			Hint1Text.transform.SetAsLastSibling();
-			Hint1Text.GetComponent<RectTransform> ().position = GetComponent<RectTransform> ().position;
+
+			hinttext = GameObject.Find("HT");
+			Hint1Text.GetComponent<RectTransform> ().position = hinttext.GetComponent<RectTransform> ().position;
+			Hint1Text.GetComponent<Text>().text = "デデデ大王";
+
 
 			/*
 			Instantiate (Hint1Text, new Vector3(1, -251, 0), transform.rotation) ;
