@@ -4,11 +4,16 @@ using System.Reflection;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class Hint : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPointerExitHandler {
+public class Hint : MonoBehaviour{
 	public int HintID = 0;
 	public GameObject Text;
 	
 	public void OnClick(){
+
+
+
+
+
 		if(HintID == 1){
 			Debug.Log("XXX");
 
@@ -27,6 +32,24 @@ public class Hint : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPointerE
 		}else if(HintID == 2){
 			Debug.Log("ZZZ");
 		}
+	}
+
+	static public T FindInParents<T>(GameObject go) where T : Component
+		//GameObjectの親であり、型がTであるものを探しにいく
+	{
+		if (go == null) return null;
+		var comp = go.GetComponent<T>();
+		
+		if (comp != null)
+			return comp;
+		
+		Transform t = go.transform.parent;
+		while (t != null && comp == null)
+		{
+			comp = t.gameObject.GetComponent<T>();
+			t = t.parent;
+		}
+		return comp;
 	}
 	
 
