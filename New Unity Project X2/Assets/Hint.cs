@@ -11,33 +11,26 @@ public class Hint : MonoBehaviour{
 	
 	public void OnClick(){
 
-
+			GameObject Hint1Text = Instantiate (Text) as GameObject;
+			var canvas = FindInParents<Canvas>(gameObject);
+			hinttext = GameObject.Find("HT");
+			Hint1Text.transform.SetParent (canvas.transform, false);
+			Hint1Text.transform.SetAsLastSibling();			
+			Hint1Text.GetComponent<RectTransform> ().position = hinttext.GetComponent<RectTransform> ().position;
+	//		hinttext.SetActiveRecursively(false);
 
 
 
 		if(HintID == 1){
-			Debug.Log("XXX");
+			Hint1Text.GetComponent<Text>().text = "デデデ";
 
-			GameObject Hint1Text = Instantiate (Text) as GameObject;
-
-			var canvas = FindInParents<Canvas>(gameObject);
-			Hint1Text.transform.SetParent (canvas.transform, false);
-			Hint1Text.transform.SetAsLastSibling();
-
-			hinttext = GameObject.Find("HT");
-			Hint1Text.GetComponent<RectTransform> ().position = hinttext.GetComponent<RectTransform> ().position;
-			Hint1Text.GetComponent<Text>().text = "デデデ大王";
-
-
-			/*
-			Instantiate (Hint1Text, new Vector3(1, -251, 0), transform.rotation) ;
-			var canvas = FindInParents<Canvas>(gameObject);
-			Hint1Text.transform.SetParent (canvas.transform, false);*/
 
 		}else if(HintID == 2){
-			Debug.Log("ZZZ");
+			Hint1Text.GetComponent<Text>().text = "大王";
 		}
 	}
+
+
 
 	static public T FindInParents<T>(GameObject go) where T : Component
 		//GameObjectの親であり、型がTであるものを探しにいく

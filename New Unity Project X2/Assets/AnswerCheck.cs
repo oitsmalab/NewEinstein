@@ -6,9 +6,9 @@ using UnityEngine.UI;
 
 public class AnswerCheck : MonoBehaviour {
 	public int [,] Answer = new int[3,3]{
-		{1,2,3},
-		{7,8,9},
-		{4,5,6}
+		{3,2,1},
+		{8,7,9},
+		{6,4,5}
 	};
 	StoreState storestate;
 	private GameObject wakuwaku;
@@ -33,7 +33,7 @@ public class AnswerCheck : MonoBehaviour {
 
 					//間違っている場合色を変える
 				}else{
-					Debug.Log ("AAA" + storestate.dragIcons[i,j]);
+					//Debug.Log ("AAA" + storestate.dragIcons[i,j]);
 
 					if(storestate.posMatrix[i,j] != 0){
 						DragIcons = storestate.dragIcons[i,j].GetComponent<Image>();
