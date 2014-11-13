@@ -12,6 +12,8 @@ public class DragMe : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHa
 	public int flag = 0;
 	public int ID = 0;
 
+	StoreState storestate;
+	DropMe dropme;
 
 	public void OnBeginDrag(PointerEventData eventData)
 	{
@@ -33,7 +35,9 @@ public class DragMe : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHa
 
 		image.sprite = GetComponent<Image>().sprite;
 		image.SetNativeSize();
-		
+
+
+
 		if (dragOnSurfaces)
 			m_DraggingPlane = transform as RectTransform;
 		else
@@ -67,8 +71,15 @@ public class DragMe : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHa
 		if (m_DraggingIcon != null)
 			Destroy(m_DraggingIcon);
 
-		if(flag==1)
+		if(flag==1){
+
+			GameObject wakuwaku = GameObject.Find("wakuwakusan");
+			storestate = wakuwaku.GetComponent<StoreState>();
+			Dropme dropme = 
+			//storestate.posMatrix[dropme.posY, dropme.posX] = 0;
 			Destroy(gameObject);
+		}
+
 	}
 
 	static public T FindInParents<T>(GameObject go) where T : Component

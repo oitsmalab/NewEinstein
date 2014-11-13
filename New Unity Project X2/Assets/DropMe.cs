@@ -52,10 +52,13 @@ public class DropMe : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPointe
 			wakuwaku = GameObject.Find("wakuwakusan");
 			storestate = wakuwaku.GetComponent<StoreState>();
 
+			Debug.Log (data.pointerDrag);
 
+			//storestateで用意した二次元配列(posMatrix)に
 			/*storestate.posMatrix[posX, posY] = dragme.ID;*/
 			storestate.posMatrix[posY, posX] = dragme.ID;
 			storestate.dragIcons[posY,posX] = dragIcon;
+
 
 			/*Debug.Log("posX  = "+posX);
 			Debug.Log("posY = "+posY);
