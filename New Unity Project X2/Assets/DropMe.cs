@@ -54,18 +54,25 @@ public class DropMe : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPointe
 
 			Debug.Log (data.pointerDrag);
 
+
+
+
 			//storestateで用意した二次元配列(posMatrix)に
 			/*storestate.posMatrix[posX, posY] = dragme.ID;*/
 			storestate.posMatrix[posY, posX] = dragme.ID;
 			storestate.dragIcons[posY,posX] = dragIcon;
 
+			dragme.MyposX = posX;
+			dragme.MyposY = posY;
+			storestate.myposX[posY,posX] = dragme.MyposX;
+			storestate.myposY[posY,posX] = dragme.MyposY;
+			
 
 			/*Debug.Log("posX  = "+posX);
 			Debug.Log("posY = "+posY);
 			Debug.Log("ID = "+dragme.ID);
 			Debug.Log("posMatrixs(ID) = "+storestate.posMatrix[posX,posY]);
 			Debug.Log(dragIcon);*/
-
 			}
 		}
 

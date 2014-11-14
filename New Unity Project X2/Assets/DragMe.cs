@@ -12,6 +12,10 @@ public class DragMe : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHa
 	public int flag = 0;
 	public int ID = 0;
 
+	public int MyposX = 0;
+	public int MyposY = 0;
+
+
 	StoreState storestate;
 	DropMe dropme;
 
@@ -75,8 +79,10 @@ public class DragMe : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHa
 
 			GameObject wakuwaku = GameObject.Find("wakuwakusan");
 			storestate = wakuwaku.GetComponent<StoreState>();
-			Dropme dropme = 
-			//storestate.posMatrix[dropme.posY, dropme.posX] = 0;
+			storestate.posMatrix[MyposY, MyposX] = 0;
+
+
+
 			Destroy(gameObject);
 		}
 
