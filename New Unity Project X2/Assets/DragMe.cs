@@ -81,8 +81,6 @@ public class DragMe : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHa
 			storestate = wakuwaku.GetComponent<StoreState>();
 			storestate.posMatrix[MyposY, MyposX] = 0;
 
-
-
 			Destroy(gameObject);
 		}
 

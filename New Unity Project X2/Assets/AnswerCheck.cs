@@ -3,7 +3,6 @@ using System.Collections;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-
 public class AnswerCheck : MonoBehaviour {
 	public int [,] Answer = new int[3,3]{
 		{3,2,1},
@@ -31,6 +30,8 @@ public class AnswerCheck : MonoBehaviour {
 				if(Answer[i,j] == storestate.posMatrix[i,j]){
 					correct++;
 
+					Debug.Log(DragIcons.color);
+					Debug.Log(DragIcons.color = falseColor);
 					//間違っている場合色を変える
 				}else{
 					//Debug.Log ("AAA" + storestate.dragIcons[i,j]);
