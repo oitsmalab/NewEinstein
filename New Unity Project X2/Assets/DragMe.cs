@@ -15,9 +15,15 @@ public class DragMe : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHa
 	public int MyposX = 0;
 	public int MyposY = 0;
 
-
 	StoreState storestate;
 	DropMe dropme;
+
+
+	public Color originColor;
+
+
+
+
 
 	public void OnBeginDrag(PointerEventData eventData)
 	{
@@ -39,7 +45,6 @@ public class DragMe : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHa
 
 		image.sprite = GetComponent<Image>().sprite;
 		image.SetNativeSize();
-
 
 
 		if (dragOnSurfaces)
@@ -80,8 +85,8 @@ public class DragMe : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHa
 			GameObject wakuwaku = GameObject.Find("wakuwakusan");
 			storestate = wakuwaku.GetComponent<StoreState>();
 			storestate.posMatrix[MyposY, MyposX] = 0;
-
 			Destroy(gameObject);
+
 		}
 
 	}

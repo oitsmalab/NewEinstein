@@ -12,6 +12,7 @@ public class AnswerCheck : MonoBehaviour {
 	StoreState storestate;
 	private GameObject wakuwaku;
 	DropMe dropme;
+	DragMe dragme;
 	public Color falseColor = Color.red;
 	private Image DragIcons;
 
@@ -30,8 +31,6 @@ public class AnswerCheck : MonoBehaviour {
 				if(Answer[i,j] == storestate.posMatrix[i,j]){
 					correct++;
 
-					Debug.Log(DragIcons.color);
-					Debug.Log(DragIcons.color = falseColor);
 					//間違っている場合色を変える
 				}else{
 					//Debug.Log ("AAA" + storestate.dragIcons[i,j]);
