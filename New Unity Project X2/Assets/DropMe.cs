@@ -16,14 +16,11 @@ public class DropMe : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPointe
 		DragMe dragme;
 		StoreState storestate;
 
+	//	private Image DIs;
 		private GameObject wakuwaku;
 
 		public int posX = 0;
 		public int posY = 0;
-
-	private Image DIs;
-
-
 
 
 		public void OnEnable ()
@@ -56,13 +53,16 @@ public class DropMe : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPointe
 			dragme.flag = 1;
 
 			
+//			DIs = dragIcon.GetComponent<Image>();
+//			DIs.color = dragme.originColor;
+
+			
 			wakuwaku = GameObject.Find("wakuwakusan");
 			storestate = wakuwaku.GetComponent<StoreState>();
 
 			Debug.Log (data.pointerDrag);
 
-			DIs = dragIcon.GetComponent<Image>();
-			DIs.color = dragme.originColor;
+
 
 
 			//storestateで用意した二次元配列(posMatrix)に

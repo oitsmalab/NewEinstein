@@ -19,11 +19,9 @@ public class DragMe : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHa
 	DropMe dropme;
 
 
-	public Color originColor;
 
 
-
-
+	
 
 	public void OnBeginDrag(PointerEventData eventData)
 	{
@@ -45,6 +43,10 @@ public class DragMe : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHa
 
 		image.sprite = GetComponent<Image>().sprite;
 		image.SetNativeSize();
+
+
+
+
 
 
 		if (dragOnSurfaces)

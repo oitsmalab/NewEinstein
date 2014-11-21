@@ -16,6 +16,9 @@ public class AnswerCheck : MonoBehaviour {
 	public Color falseColor = Color.red;
 	private Image DragIcons;
 
+	public Color originColor = Color.blue;
+	private GameObject seikai;
+
 	// Use this for initialization
 	public void OnClick () {
 		wakuwaku = GameObject.Find("wakuwakusan");
@@ -28,26 +31,48 @@ public class AnswerCheck : MonoBehaviour {
 			for(int j=0; j<3; j++){
 			//	Debug.Log("Answer = "+Answer[i,j]);
 				Debug.Log (Answer[i,j]+" vs " + storestate.posMatrix[i,j]);
+
+
+
 				if(Answer[i,j] == storestate.posMatrix[i,j]){
+
+
+
+					Debug.Log("AAAA");
+					DragIcons = storestate.dragIcons[i,j].GetComponent<Image>();
+
+
+					//ここに問題あり？
+
+					seikai = GameObject.Find("wakuwakusan");
+					dragme = seikai.GetComponent<DragMe>();
+					DragIcons.color = storestate.ncolor;
+
+
 					correct++;
+
 
 					//間違っている場合色を変える
 				}else{
 					//Debug.Log ("AAA" + storestate.dragIcons[i,j]);
 
-					if(storestate.posMatrix[i,j] != 0){
+						if(storestate.posMatrix[i,j] != 0){
 						DragIcons = storestate.dragIcons[i,j].GetComponent<Image>();
 						DragIcons.color = falseColor;
 					}
 				}
 			}
 		}
+
+
 		if (correct == 9) {
 						Debug.Log ("!!!!");
 				}
 		Debug.Log (correct);
 
 	}
+
+
 	void Start () {
 
 	}
