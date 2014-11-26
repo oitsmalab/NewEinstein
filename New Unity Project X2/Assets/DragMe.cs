@@ -18,7 +18,7 @@ public class DragMe : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHa
 	StoreState storestate;
 	DropMe dropme;
 
-
+	public Color originColor;
 
 
 	

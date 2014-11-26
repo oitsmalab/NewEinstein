@@ -15,8 +15,8 @@ public class DropMe : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPointe
 		
 		DragMe dragme;
 		StoreState storestate;
-
-	//	private Image DIs;
+	
+		private Image DIs;
 		private GameObject wakuwaku;
 
 		public int posX = 0;
@@ -53,8 +53,8 @@ public class DropMe : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPointe
 			dragme.flag = 1;
 
 			
-//			DIs = dragIcon.GetComponent<Image>();
-//			DIs.color = dragme.originColor;
+			DIs = dragIcon.GetComponent<Image>();
+			DIs.color = dragme.originColor;
 
 			
 			wakuwaku = GameObject.Find("wakuwakusan");

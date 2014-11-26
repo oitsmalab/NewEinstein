@@ -34,6 +34,9 @@ public class AnswerCheck : MonoBehaviour {
 
 				if(Answer[i,j] == storestate.posMatrix[i,j]){
 
+					//DragIcons = storestate.dragIcons[i,j].GetComponent<Image>();
+					//DragIcons.color = dragme.originColor;
+
 					correct++;
 
 
