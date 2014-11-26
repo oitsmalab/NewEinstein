@@ -10,14 +10,10 @@ public class StoreState : MonoBehaviour {
 	public int[,] myposX = new int[3,3];
 	public int[,] myposY = new int[3,3];
 
-	public Color ncolor;
-	public Image cnImage;
 
 	// Use this for initialization
 	void Start () {
-		//
-		ncolor = cnImage.color;
-		//
+
 	}
 	
 	// Update is called once per frame

@@ -16,8 +16,6 @@ public class AnswerCheck : MonoBehaviour {
 	public Color falseColor = Color.red;
 	private Image DragIcons;
 
-	public Color originColor = Color.blue;
-	private GameObject seikai;
 
 	// Use this for initialization
 	public void OnClick () {
@@ -35,19 +33,6 @@ public class AnswerCheck : MonoBehaviour {
 
 
 				if(Answer[i,j] == storestate.posMatrix[i,j]){
-
-
-
-					Debug.Log("AAAA");
-					DragIcons = storestate.dragIcons[i,j].GetComponent<Image>();
-
-
-					//ここに問題あり？
-
-					seikai = GameObject.Find("wakuwakusan");
-					dragme = seikai.GetComponent<DragMe>();
-					DragIcons.color = storestate.ncolor;
-
 
 					correct++;
 
