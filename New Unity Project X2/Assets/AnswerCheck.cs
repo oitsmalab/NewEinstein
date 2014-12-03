@@ -15,6 +15,13 @@ public class AnswerCheck : MonoBehaviour {
 	DragMe dragme;
 	public Color falseColor = Color.red;
 	private Image DragIcons;
+	
+	int hp = 3;
+	int misscount = 0;
+	private GameObject HP1;
+	private GameObject HP2;
+	private GameObject HP3;
+	private GameObject BT;
 
 
 	// Use this for initialization
@@ -22,9 +29,11 @@ public class AnswerCheck : MonoBehaviour {
 		wakuwaku = GameObject.Find("wakuwakusan");
 		storestate = wakuwaku.GetComponent<StoreState>();
 
-		Debug.Log ("Clicked");
+		Debug.Log ("-----------------------------------------");
 
 		int correct = 0;
+		int miss = 0;
+
 		for (int i=0; i<3; i++) {
 			for(int j=0; j<3; j++){
 			//	Debug.Log("Answer = "+Answer[i,j]);
@@ -47,16 +56,41 @@ public class AnswerCheck : MonoBehaviour {
 						if(storestate.posMatrix[i,j] != 0){
 						DragIcons = storestate.dragIcons[i,j].GetComponent<Image>();
 						DragIcons.color = falseColor;
+						miss=1;
 					}
 				}
 			}
 		}
 
+		if (miss == 1) {
+						hp = hp - 1;
+			misscount++;
+				}
+
+		if (hp < 0) {
+						Debug.Log ("失敗");
+			BT = GameObject.Find ("Button");
+			GameObject.Destroy (BT);	
+				}
 
 		if (correct == 9) {
 						Debug.Log ("!!!!");
 				}
 		Debug.Log (correct);
+		Debug.Log (hp);
+
+
+		if (misscount == 1) {
+			HP1 = GameObject.Find ("hp1");
+			GameObject.Destroy (HP1);	
+		} else if (misscount == 2) {
+			HP2 = GameObject.Find ("hp2");
+						Destroy (HP2);	
+		} else if (misscount == 3) {
+			HP3 = GameObject.Find ("hp3");
+						Destroy (HP3);
+
+				}
 
 	}
 
