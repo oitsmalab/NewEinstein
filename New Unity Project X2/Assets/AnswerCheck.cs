@@ -69,12 +69,15 @@ public class AnswerCheck : MonoBehaviour {
 
 		if (hp < 0) {
 						Debug.Log ("失敗");
-			BT = GameObject.Find ("Button");
-			GameObject.Destroy (BT);	
+			Application.LoadLevel("falsend");
+			//BT = GameObject.Find ("Button");
+			//GameObject.Destroy (BT);	
 				}
 
 		if (correct == 9) {
 						Debug.Log ("!!!!");
+
+			Application.LoadLevel("truend");
 				}
 		Debug.Log (correct);
 		Debug.Log (hp);
