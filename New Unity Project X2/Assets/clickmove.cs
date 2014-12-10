@@ -21,10 +21,10 @@ public class clickmove : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
-		if (star1 = 1) {
+		if (star1 == 1) {
 						Debug.Log ("star1");
 				}
-		if (star2 = 1) {
+		if (star2 == 1) {
 						Debug.Log ("star2");
 				}
 	}

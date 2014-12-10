@@ -85,9 +85,9 @@ public class AnswerCheck : MonoBehaviour {
 //			CM = cmove.GetComponent<clickmove>();
 
 			if(Application.loadedLevelName == "ain_12_03"){
-				CM.star1 = 1;
+				clickmove.star1 = 1;
 			}else if(Application.loadedLevelName == "ain_11_26"){
-				CM.star2 = 1;
+				clickmove.star2 = 1;
 			}
 			Application.LoadLevel("truend");
 
