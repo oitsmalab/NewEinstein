@@ -13,6 +13,9 @@ public class AnswerCheck : MonoBehaviour {
 	private GameObject wakuwaku;
 	DropMe dropme;
 	DragMe dragme;
+
+	clickmove CM; 
+
 	public Color falseColor = Color.red;
 	private Image DragIcons;
 	
@@ -77,7 +80,17 @@ public class AnswerCheck : MonoBehaviour {
 		if (correct == 9) {
 						Debug.Log ("!!!!");
 
+			
+//			GameObject cmove = GameObject.Find("Lv1Button");
+//			CM = cmove.GetComponent<clickmove>();
+
+			if(Application.loadedLevelName == "ain_12_03"){
+				CM.star1 = 1;
+			}else if(Application.loadedLevelName == "ain_11_26"){
+				CM.star2 = 1;
+			}
 			Application.LoadLevel("truend");
+
 				}
 		Debug.Log (correct);
 		Debug.Log (hp);
