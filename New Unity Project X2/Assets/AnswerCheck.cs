@@ -5,9 +5,9 @@ using UnityEngine.UI;
 
 public class AnswerCheck : MonoBehaviour {
 	public int [,] Answer = new int[3,3]{
-		{3,2,1},
-		{8,7,9},
-		{6,4,5}
+		{1,2,3},
+		{4,5,6},
+		{7,8,9}
 	};
 	StoreState storestate;
 	private GameObject wakuwaku;
@@ -84,9 +84,9 @@ public class AnswerCheck : MonoBehaviour {
 //			GameObject cmove = GameObject.Find("Lv1Button");
 //			CM = cmove.GetComponent<clickmove>();
 
-			if(Application.loadedLevelName == "ain_12_03"){
+			if(Application.loadedLevelName == "ain_11_26"){
 				clickmove.star1 = 1;
-			}else if(Application.loadedLevelName == "ain_11_26"){
+			}else if(Application.loadedLevelName == "ain_12_03"){
 				clickmove.star2 = 1;
 			}
 			Application.LoadLevel("truend");

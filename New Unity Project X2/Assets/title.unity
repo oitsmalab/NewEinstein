@@ -479,6 +479,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ID: 1
+  clearcolor: {r: 1, g: .921568632, b: .0156862754, a: 1}
 --- !u!114 &1083354666
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -656,6 +657,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ID: 2
+  clearcolor: {r: 1, g: .921568632, b: .0156862754, a: 1}
 --- !u!114 &1938548417
 MonoBehaviour:
   m_ObjectHideFlags: 0
