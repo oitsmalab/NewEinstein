@@ -20,11 +20,11 @@ public class clickmove : MonoBehaviour {
 	public void OnClick () {
 
 		if (ID == 1) {
-			Application.LoadLevel("Lv1ein");//レベル1の問題
+			Application.LoadLevel("Lv1");//レベル1の問題
 		} else if (ID == 2) {
-			Application.LoadLevel("ain_11_26");
+			Application.LoadLevel("Lv2");
 		} else if (ID == 3) {
-			Application.LoadLevel("ain_12_03");
+			Application.LoadLevel("Lv3");
 		} else if (ID == 4) {
 			Application.LoadLevel("title");//レベル4の問題
 		} else if (ID == 0) {

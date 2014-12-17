@@ -20,7 +20,6 @@ public class DragMe : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHa
 
 	public Color originColor;
 
-
 	
 
 	public void OnBeginDrag(PointerEventData eventData)

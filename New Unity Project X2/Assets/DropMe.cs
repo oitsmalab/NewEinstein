@@ -22,6 +22,9 @@ public class DropMe : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPointe
 		public int posX = 0;
 		public int posY = 0;
 
+	
+
+
 
 		public void OnEnable ()
 		{

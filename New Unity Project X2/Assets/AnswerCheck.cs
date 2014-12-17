@@ -65,7 +65,7 @@ public class AnswerCheck : MonoBehaviour {
 			}
 		}
 
-		if (Application.loadedLevelName != "Lv1ein") {
+		if (Application.loadedLevelName != "Lv1") {
 
 						if (miss == 1) {
 								hp = hp - 1;
@@ -87,11 +87,11 @@ public class AnswerCheck : MonoBehaviour {
 //			GameObject cmove = GameObject.Find("Lv1Button");
 //			CM = cmove.GetComponent<clickmove>();
 
-			if(Application.loadedLevelName == "Lv1ein"){//レベル1
+			if(Application.loadedLevelName == "Lv1"){//レベル1
 				clickmove.star1 = 1;
-			}else if(Application.loadedLevelName == "ain_11_26"){
+			}else if(Application.loadedLevelName == "Lv2"){
 				clickmove.star2 = 1;
-			}else if(Application.loadedLevelName == "ain_12_03"){
+			}else if(Application.loadedLevelName == "Lv3"){
 				clickmove.star3 = 1;
 			}else if(Application.loadedLevelName == "title"){//レベル4
 				clickmove.star4 = 1;
@@ -104,7 +104,7 @@ public class AnswerCheck : MonoBehaviour {
 		Debug.Log (correct);
 		Debug.Log (hp);
 
-		if (Application.loadedLevelName != "Lv1ein") {
+		if (Application.loadedLevelName != "Lv1") {
 						if (misscount == 1) {
 								HP1 = GameObject.Find ("hp1");
 								GameObject.Destroy (HP1);	
@@ -119,6 +119,8 @@ public class AnswerCheck : MonoBehaviour {
 				}
 
 	}
+
+
 
 
 	void Start () {

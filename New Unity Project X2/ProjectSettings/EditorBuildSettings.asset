@@ -8,11 +8,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scene/title.unity
   - enabled: 1
-    path: Assets/Scene/Lv1ein.unity
+    path: Assets/Scene/Lv1.unity
   - enabled: 1
-    path: Assets/Scene/ain_11_26.unity
+    path: Assets/Scene/Lv2.unity
   - enabled: 1
-    path: Assets/Scene/ain_12_03.unity
+    path: Assets/Scene/Lv2 hint1.unity
+  - enabled: 1
+    path: Assets/Scene/Lv2 hint2.unity
+  - enabled: 1
+    path: Assets/Scene/Lv3.unity
   - enabled: 1
     path: Assets/Scene/falsend.unity
   - enabled: 1
