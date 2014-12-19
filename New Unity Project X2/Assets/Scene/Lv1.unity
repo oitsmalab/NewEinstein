@@ -465,6 +465,7 @@ GameObject:
   - 92: {fileID: 311748778}
   - 124: {fileID: 311748777}
   - 81: {fileID: 311748776}
+  - 114: {fileID: 311748781}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -537,6 +538,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!114 &311748781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 311748775}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db22cd13c8c0e954ba0763f2e80a0efa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hint1: "\u30A2\u30E1\u30EA\u30AB\u4EBA\u306F\u3001\u3042\u304B\u3044\u3084\u306D\u306E\u304A\u3046\u3061\u306B\u3059\u3093\u3067\u3044\u308B"
+  hint2: "\u306B\u307B\u3093\u4EBA\u306F\u3001\u30A4\u30AE\u30EA\u30B9\u4EBA\u306E\u3072\u3060\u308A\u306B\u3059\u3093\u3067\u3044\u308B"
+  hint3: "\u3057\u308D\u306E\u3044\u3048\u306E\u3072\u3060\u308A\u306B\u3059\u3093\u3067\u3044\u308B\u4EBA\u306F\u3001\u3046\u307E\u3092\u304B\u3063\u3066\u3044\u308B"
+  hint4: "\u3044\u306C\u3092\u304B\u3063\u3066\u3044\u308B\u4EBA\u3068\u306D\u3053\u3092\u304B\u3063\u3066\u3044\u308B\u4EBA\u306F\u3068\u306A\u308A\u3042\u308F\u306A\u3044"
+  hint5: "\u3042\u304A\u306E\u3044\u3048\u306E\u307F\u304E\u3069\u306A\u308A\u306B\u306F\u3001\u30A4\u30AE\u30EA\u30B9\u4EBA\u304C\u3059\u3093\u3067\u3044\u308B"
+  hint6: "\u3044\u306C\u3092\u304B\u3063\u3066\u3044\u308B\u306E\u306F\u3001\u30A2\u30E1\u30EA\u30AB\u4EBA\u3067\u306F\u306A\u3044"
 --- !u!1 &384285601
 GameObject:
   m_ObjectHideFlags: 0

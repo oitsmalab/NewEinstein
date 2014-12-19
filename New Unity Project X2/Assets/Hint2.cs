@@ -9,7 +9,8 @@ public class Hint2 : MonoBehaviour{
 	public int answerID = 0;
 	public GameObject Text;
 	private GameObject hinttext;
-
+	private GameObject maincamera;
+	HintTextBox hinttextbox;
 	
 	
 
@@ -19,7 +20,11 @@ public class Hint2 : MonoBehaviour{
 /*		GameObject Hint1Text = Instantiate (Text) as GameObject;
 		var canvas = FindInParents<Canvas>(gameObject);*/
 		hinttext = GameObject.Find("HT");
-//		hinttext = hinttext.GetComponent<HintTextBox>();
+		//hinttext = hinttext.GetComponent<HintTextBox>();
+
+
+		maincamera = GameObject.FindWithTag("MainCamera");
+		hinttextbox = maincamera.GetComponent<HintTextBox> ();
 
 		
 /*		hinttext.transform.SetParent (canvas.transform, false);
@@ -29,36 +34,56 @@ public class Hint2 : MonoBehaviour{
 		if (answerID == 1) {
 			
 			if (HintID == 1) {
-				hinttext.GetComponent<Text> ().text = "アメリカ人は、あかいやねのおうちにすんでいる";
+				hinttext.GetComponent<Text> ().text = hinttextbox.hint1;
 			} else if (HintID == 2) {
-				hinttext.GetComponent<Text> ().text = "にほん人は、イギリス人のひだりにすんでいる";				
+				hinttext.GetComponent<Text> ().text = hinttextbox.hint2;
 			} else if (HintID == 3) {
-				hinttext.GetComponent<Text> ().text = "しろのいえのひだりにすんでいる人は、うまをかっている";				
+				hinttext.GetComponent<Text> ().text = hinttextbox.hint3;
 			} else if (HintID == 4) {
-				hinttext.GetComponent<Text> ().text = "いぬをかっている人とねこをかっている人はとなりあわない";				
+				hinttext.GetComponent<Text> ().text = hinttextbox.hint4;
 			} else if (HintID == 5) {
-				hinttext.GetComponent<Text> ().text = "あおのいえのみぎどなりには、イギリス人がすんでいる";
+				hinttext.GetComponent<Text> ().text = hinttextbox.hint5;
 			} else if (HintID == 6) {
-				hinttext.GetComponent<Text> ().text = "いぬをかっているのは、アメリカ人ではない";
+				hinttext.GetComponent<Text> ().text = hinttextbox.hint6;
 			}
 		}
 		
 		if (answerID == 2) {
 		
 			if (HintID == 1) {
-				hinttext.GetComponent<Text> ().text = "きりんがすきなひとは、ひだり";
+				//hinttext.GetComponent<Text> ().text = "きりんがすきなひとは、ひだり";
+				hinttext.GetComponent<Text> ().text = hinttextbox.hint1;
 			} else if (HintID == 2) {
-				hinttext.GetComponent<Text> ().text = "まさきのみぎは、やすまさ";
+				//hinttext.GetComponent<Text> ().text = "まさきのみぎは、やすまさ";
+				hinttext.GetComponent<Text> ().text = hinttextbox.hint2;
 			} else if (HintID == 3) {
-				hinttext.GetComponent<Text> ().text = "たけしのとなりは、ねこがすき";	
+				//hinttext.GetComponent<Text> ().text = "たけしのとなりは、ねこがすき";	
+				hinttext.GetComponent<Text> ().text = hinttextbox.hint3;
 			} else if (HintID == 4) {
-				hinttext.GetComponent<Text> ().text = "いぬがすきなひとは、きいろがすき";	
+				//hinttext.GetComponent<Text> ().text = "いぬがすきなひとは、きいろがすき";	
+				hinttext.GetComponent<Text> ().text = hinttextbox.hint4;
 			} else if (HintID == 5) {
-				hinttext.GetComponent<Text> ().text = "あかいろがすきなのは、まさき";
+				//hinttext.GetComponent<Text> ().text = "あかいろがすきなのは、まさき";
+				hinttext.GetComponent<Text> ().text = hinttextbox.hint5;
 			}
 		}
 
 		if (answerID == 3) {
+			
+			if (HintID == 1) {
+				hinttext.GetComponent<Text> ().text = hinttextbox.hint1;
+			} else if (HintID == 2) {
+				hinttext.GetComponent<Text> ().text = hinttextbox.hint2;
+			} else if (HintID == 3) {
+				hinttext.GetComponent<Text> ().text = hinttextbox.hint3;
+			} else if (HintID == 4) {
+				hinttext.GetComponent<Text> ().text = hinttextbox.hint4;
+			} else if (HintID == 5) {
+				hinttext.GetComponent<Text> ().text = hinttextbox.hint5;
+			}
+		}
+
+/*		if (answerID == 3) {
 			
 			if (HintID == 1) {
 				hinttext.GetComponent<Text> ().text = "きりんがすきなひとは、ひだり";				
@@ -71,20 +96,20 @@ public class Hint2 : MonoBehaviour{
 			} else if (HintID == 5) {
 				hinttext.GetComponent<Text> ().text = "あかいろがすきなのは、まさき";
 			}
-		}
+		}*/
 
 		if (answerID == 4) {
 			
 			if (HintID == 1) {
-				hinttext.GetComponent<Text> ().text = "";				
+				hinttext.GetComponent<Text> ().text = hinttextbox.hint1;
 			} else if (HintID == 2) {
-				hinttext.GetComponent<Text> ().text = "";				
+				hinttext.GetComponent<Text> ().text = hinttextbox.hint2;
 			} else if (HintID == 3) {
-				hinttext.GetComponent<Text> ().text = "";				
+				hinttext.GetComponent<Text> ().text = hinttextbox.hint3;
 			} else if (HintID == 4) {
-				hinttext.GetComponent<Text> ().text = "";				
+				hinttext.GetComponent<Text> ().text = hinttextbox.hint4;
 			} else if (HintID == 5) {
-				hinttext.GetComponent<Text> ().text = "";
+				hinttext.GetComponent<Text> ().text = hinttextbox.hint5;
 			}
 		}
 	}

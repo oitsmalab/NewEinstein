@@ -8,6 +8,7 @@ public class HintTextBox : MonoBehaviour {
 	public string hint3;
 	public string hint4;
 	public string hint5;
+	public string hint6;
 
 	void start(){
 

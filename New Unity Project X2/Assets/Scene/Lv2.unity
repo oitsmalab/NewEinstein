@@ -554,7 +554,8 @@ MonoBehaviour:
   hint2: "\u307E\u3055\u304D\u306E\u307F\u304E\u306F\u3001\u3084\u3059\u307E\u3055"
   hint3: "\u305F\u3051\u3057\u306E\u3068\u306A\u308A\u306F\u3001\u306D\u3053\u304C\u3059\u304D"
   hint4: "\u3044\u306C\u304C\u3059\u304D\u306A\u3072\u3068\u306F\u3001\u304D\u3044\u308D\u304C\u3059\u304D"
-  hint5: "\u304B\u3044\u308D\u304C\u3059\u304D\u306A\u306E\u306F\u3001\u307E\u3055\u304D"
+  hint5: "\u3042\u304B\u3044\u308D\u304C\u3059\u304D\u306A\u306E\u306F\u3001\u307E\u3055\u304D"
+  hint6: 
 --- !u!1 &384285601
 GameObject:
   m_ObjectHideFlags: 0
@@ -862,7 +863,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HintID: 5
   answerID: 2
-  Text: {fileID: 100000, guid: 1a1719e60c65c144b8599911d7c74876, type: 2}
+  Text: {fileID: 0}
 --- !u!114 &438696835
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1744,7 +1745,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HintID: 4
   answerID: 2
-  Text: {fileID: 100000, guid: 1a1719e60c65c144b8599911d7c74876, type: 2}
+  Text: {fileID: 0}
 --- !u!114 &855652097
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2557,7 +2558,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HintID: 3
   answerID: 2
-  Text: {fileID: 100000, guid: 1a1719e60c65c144b8599911d7c74876, type: 2}
+  Text: {fileID: 0}
 --- !u!114 &1211878665
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2981,7 +2982,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HintID: 1
   answerID: 2
-  Text: {fileID: 100000, guid: 1a1719e60c65c144b8599911d7c74876, type: 2}
+  Text: {fileID: 0}
 --- !u!1 &1390150516
 GameObject:
   m_ObjectHideFlags: 0
@@ -3486,11 +3487,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22400072, guid: e761503c5240c90478610338ed1ba031, type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -203.220001
+      value: 71.2813416
       objectReference: {fileID: 0}
     - target: {fileID: 22400072, guid: e761503c5240c90478610338ed1ba031, type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: -1.07749999
+      value: 845.591064
       objectReference: {fileID: 0}
     - target: {fileID: 11400114, guid: e761503c5240c90478610338ed1ba031, type: 2}
       propertyPath: answerID
@@ -3511,6 +3512,18 @@ Prefab:
     - target: {fileID: 11400022, guid: e761503c5240c90478610338ed1ba031, type: 2}
       propertyPath: answerID
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 22400072, guid: e761503c5240c90478610338ed1ba031, type: 2}
+      propertyPath: m_Pivot.x
+      value: 1.76710951
+      objectReference: {fileID: 0}
+    - target: {fileID: 22400072, guid: e761503c5240c90478610338ed1ba031, type: 2}
+      propertyPath: m_Pivot.y
+      value: 7.68923807
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400126, guid: e761503c5240c90478610338ed1ba031, type: 2}
+      propertyPath: m_Text
+      value: "\u3053\u3053\u306B\u30D2\u30F3\u30C8\u304C\u3067\u308B\u3088"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e761503c5240c90478610338ed1ba031, type: 2}
@@ -3579,9 +3592,9 @@ RectTransform:
   m_RootOrder: 4
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: -1.07749999, y: -203.220001}
+  m_AnchoredPosition: {x: 845.591064, y: 71.2813416}
   m_SizeDelta: {x: 350, y: 20}
-  m_Pivot: {x: .5, y: .5}
+  m_Pivot: {x: 1.76710951, y: 7.68923807}
 --- !u!114 &1815294353
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4221,7 +4234,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HintID: 2
   answerID: 2
-  Text: {fileID: 100000, guid: 1a1719e60c65c144b8599911d7c74876, type: 2}
+  Text: {fileID: 0}
 --- !u!1 &2107440390
 GameObject:
   m_ObjectHideFlags: 0
