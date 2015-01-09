@@ -408,10 +408,10 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 1044346356}
+  - {fileID: 392536416}
   - {fileID: 1813994576}
   - {fileID: 1739032404}
   - {fileID: 1190230468}
-  - {fileID: 392536416}
   - {fileID: 1815294352}
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -741,7 +741,7 @@ Transform:
   - {fileID: 438696833}
   - {fileID: 1917123321}
   m_Father: {fileID: 299214382}
-  m_RootOrder: 4
+  m_RootOrder: 1
 --- !u!1 &420206665
 GameObject:
   m_ObjectHideFlags: 0
@@ -1124,21 +1124,57 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400160, guid: 5e8c947923d75964db0e81a621dd2829, type: 2}
       propertyPath: m_Color.r
-      value: .772058845
+      value: .678971767
       objectReference: {fileID: 0}
     - target: {fileID: 11400160, guid: 5e8c947923d75964db0e81a621dd2829, type: 2}
       propertyPath: m_Color.g
-      value: .323583484
+      value: .862745106
       objectReference: {fileID: 0}
     - target: {fileID: 11400160, guid: 5e8c947923d75964db0e81a621dd2829, type: 2}
       propertyPath: m_Color.b
-      value: .323583484
+      value: .65974623
       objectReference: {fileID: 0}
     - target: {fileID: 11400160, guid: 5e8c947923d75964db0e81a621dd2829, type: 2}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: cc4590a615698a0478468eb2ba2c9aab,
         type: 3}
+    - target: {fileID: 22400062, guid: 5e8c947923d75964db0e81a621dd2829, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5e8c947923d75964db0e81a621dd2829, type: 2}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 22400050, guid: 5e8c947923d75964db0e81a621dd2829, type: 2}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 22400068, guid: 5e8c947923d75964db0e81a621dd2829, type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: 5e8c947923d75964db0e81a621dd2829, type: 2}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 22400072, guid: 5e8c947923d75964db0e81a621dd2829, type: 2}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400126, guid: 5e8c947923d75964db0e81a621dd2829, type: 2}
+      propertyPath: m_Color.b
+      value: .784313738
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400126, guid: 5e8c947923d75964db0e81a621dd2829, type: 2}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400126, guid: 5e8c947923d75964db0e81a621dd2829, type: 2}
+      propertyPath: m_Color.r
+      value: .00873864908
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5e8c947923d75964db0e81a621dd2829, type: 2}
   m_RootGameObject: {fileID: 299214381}
@@ -2044,7 +2080,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Mat: {fileID: 0}
-  m_Color: {r: .772058845, g: .323583484, b: .323583484, a: 1}
+  m_Color: {r: .678971767, g: .862745106, b: .65974623, a: 1}
   m_Sprite: {fileID: 21300000, guid: cc4590a615698a0478468eb2ba2c9aab, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -2327,7 +2363,7 @@ RectTransform:
   m_Children:
   - {fileID: 420206666}
   m_Father: {fileID: 299214382}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
   m_AnchoredPosition: {x: 200.100006, y: -90.3259964}
@@ -3290,7 +3326,7 @@ RectTransform:
   - {fileID: 1217573641}
   - {fileID: 1174887008}
   m_Father: {fileID: 299214382}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
   m_AnchoredPosition: {x: 27.0079994, y: 65.4420013}
@@ -3408,7 +3444,7 @@ Transform:
   - {fileID: 721178299}
   - {fileID: 1445400767}
   m_Father: {fileID: 299214382}
-  m_RootOrder: 1
+  m_RootOrder: 2
 --- !u!1 &1815294351
 GameObject:
   m_ObjectHideFlags: 0
@@ -3457,7 +3493,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Mat: {fileID: 0}
-  m_Color: {r: .0739619583, g: .838235259, b: .553609252, a: 1}
+  m_Color: {r: .00873864908, g: 0, b: .784313738, a: 1}
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 14

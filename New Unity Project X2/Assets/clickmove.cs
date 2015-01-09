@@ -17,6 +17,13 @@ public class clickmove : MonoBehaviour {
 	private Image Lv4B;
 	public Color clearcolor = Color.yellow;
 
+	public GameObject Text;
+	private GameObject modetext;
+	private GameObject maincamera;
+	HintTextBox hinttextbox;
+
+	public GameObject thisObject;
+
 	public void OnClick () {
 
 		if (ID == 1) {
@@ -26,11 +33,36 @@ public class clickmove : MonoBehaviour {
 		} else if (ID == 3) {
 			Application.LoadLevel("Lv3");
 		} else if (ID == 4) {
-			Application.LoadLevel("title");//レベル4の問題
+			Application.LoadLevel("Lv4");//レベル4の問題
 		} else if (ID == 0) {
 			Application.LoadLevel("title");//タイトルに戻る
 		}
 		}
+
+	/*
+	public void OnPointerEnter(PointerEventData data)
+	{
+
+
+
+		modetext = GameObject.Find("MT");
+		maincamera = GameObject.FindWithTag("MainCamera");
+		hinttextbox = maincamera.GetComponent<HintTextBox> ();
+
+			if (data..tag){
+			Debug.Log("YES!!");
+				modetext.GetComponent<Text> ().text = hinttextbox.hint1;
+			} else if (data.pointerEnter.tag == "Lv2") {
+				modetext.GetComponent<Text> ().text = hinttextbox.hint2;
+			} else if (data.pointerDrag.tag == "Lv3") {
+				modetext.GetComponent<Text> ().text = hinttextbox.hint3;
+			} else if (data.pointerDrag.tag == "Lv4") {
+				modetext.GetComponent<Text> ().text = hinttextbox.hint4;
+			}
+
+			}
+	*/
+
 
 	// Use this for initialization
 	void Start () {

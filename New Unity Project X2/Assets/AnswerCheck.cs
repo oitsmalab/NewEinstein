@@ -93,7 +93,7 @@ public class AnswerCheck : MonoBehaviour {
 				clickmove.star2 = 1;
 			}else if(Application.loadedLevelName == "Lv3"){
 				clickmove.star3 = 1;
-			}else if(Application.loadedLevelName == "title"){//レベル4
+			}else if(Application.loadedLevelName == "Lv4"){//レベル4
 				clickmove.star4 = 1;
 			}
 
