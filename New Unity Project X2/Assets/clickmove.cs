@@ -39,29 +39,6 @@ public class clickmove : MonoBehaviour {
 		}
 		}
 
-	/*
-	public void OnPointerEnter(PointerEventData data)
-	{
-
-
-
-		modetext = GameObject.Find("MT");
-		maincamera = GameObject.FindWithTag("MainCamera");
-		hinttextbox = maincamera.GetComponent<HintTextBox> ();
-
-			if (data..tag){
-			Debug.Log("YES!!");
-				modetext.GetComponent<Text> ().text = hinttextbox.hint1;
-			} else if (data.pointerEnter.tag == "Lv2") {
-				modetext.GetComponent<Text> ().text = hinttextbox.hint2;
-			} else if (data.pointerDrag.tag == "Lv3") {
-				modetext.GetComponent<Text> ().text = hinttextbox.hint3;
-			} else if (data.pointerDrag.tag == "Lv4") {
-				modetext.GetComponent<Text> ().text = hinttextbox.hint4;
-			}
-
-			}
-	*/
 
 
 	// Use this for initialization
