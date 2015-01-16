@@ -16,6 +16,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scene/Lv4.unity
   - enabled: 1
+    path: Assets/Scene/Lv5.unity
+  - enabled: 1
+    path: Assets/Scene/Lv6.unity
+  - enabled: 1
     path: Assets/Scene/falsend.unity
   - enabled: 1
     path: Assets/Scene/truend.unity

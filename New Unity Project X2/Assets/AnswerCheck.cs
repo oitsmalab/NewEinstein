@@ -65,8 +65,9 @@ public class AnswerCheck : MonoBehaviour {
 			}
 		}
 
-		if (Application.loadedLevelName != "Lv1") {
 
+
+		if (Application.loadedLevelName != "Lv1") {
 						if (miss == 1) {
 								hp = hp - 1;
 								misscount++;
@@ -79,6 +80,8 @@ public class AnswerCheck : MonoBehaviour {
 								//GameObject.Destroy (BT);	
 						}
 				}
+
+
 
 		if (correct == 9) {
 						Debug.Log ("!!!!");
@@ -95,6 +98,10 @@ public class AnswerCheck : MonoBehaviour {
 				clickmove.star3 = 1;
 			}else if(Application.loadedLevelName == "Lv4"){//レベル4
 				clickmove.star4 = 1;
+			}else if(Application.loadedLevelName == "Lv5"){//レベル5
+				clickmove.star5 = 1;
+			}else if(Application.loadedLevelName == "Lv6"){//レベル6
+				clickmove.star6 = 1;
 			}
 
 
@@ -124,6 +131,15 @@ public class AnswerCheck : MonoBehaviour {
 
 
 	void Start () {
+
+		if (Application.loadedLevelName == "Lv6") {
+			misscount = 2;
+			hp = 1;
+			HP1 = GameObject.Find ("hp1");
+			GameObject.Destroy (HP1);
+			HP2 = GameObject.Find ("hp2");
+			Destroy (HP2);
+		}
 
 	}
 	
