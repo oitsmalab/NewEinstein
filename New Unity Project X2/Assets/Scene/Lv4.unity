@@ -832,7 +832,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HintID: 5
-  answerID: 3
+  answerID: 1
   Text: {fileID: 100000, guid: 1a1719e60c65c144b8599911d7c74876, type: 2}
 --- !u!114 &438696835
 MonoBehaviour:
@@ -1742,7 +1742,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HintID: 4
-  answerID: 3
+  answerID: 1
   Text: {fileID: 100000, guid: 1a1719e60c65c144b8599911d7c74876, type: 2}
 --- !u!114 &855652097
 MonoBehaviour:
@@ -2527,7 +2527,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HintID: 3
-  answerID: 3
+  answerID: 1
   Text: {fileID: 100000, guid: 1a1719e60c65c144b8599911d7c74876, type: 2}
 --- !u!114 &1211878665
 MonoBehaviour:
@@ -2951,7 +2951,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HintID: 1
-  answerID: 3
+  answerID: 1
   Text: {fileID: 100000, guid: 1a1719e60c65c144b8599911d7c74876, type: 2}
 --- !u!1 &1428157389
 GameObject:
@@ -4073,7 +4073,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HintID: 2
-  answerID: 3
+  answerID: 1
   Text: {fileID: 100000, guid: 1a1719e60c65c144b8599911d7c74876, type: 2}
 --- !u!1 &2100922605
 GameObject:

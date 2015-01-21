@@ -47,71 +47,7 @@ public class Hint2 : MonoBehaviour{
 				hinttext.GetComponent<Text> ().text = hinttextbox.hint6;
 			}
 		}
-		
-		if (answerID == 2) {
-		
-			if (HintID == 1) {
-				//hinttext.GetComponent<Text> ().text = "きりんがすきなひとは、ひだり";
-				hinttext.GetComponent<Text> ().text = hinttextbox.hint1;
-			} else if (HintID == 2) {
-				//hinttext.GetComponent<Text> ().text = "まさきのみぎは、やすまさ";
-				hinttext.GetComponent<Text> ().text = hinttextbox.hint2;
-			} else if (HintID == 3) {
-				//hinttext.GetComponent<Text> ().text = "たけしのとなりは、ねこがすき";	
-				hinttext.GetComponent<Text> ().text = hinttextbox.hint3;
-			} else if (HintID == 4) {
-				//hinttext.GetComponent<Text> ().text = "いぬがすきなひとは、きいろがすき";	
-				hinttext.GetComponent<Text> ().text = hinttextbox.hint4;
-			} else if (HintID == 5) {
-				//hinttext.GetComponent<Text> ().text = "あかいろがすきなのは、まさき";
-				hinttext.GetComponent<Text> ().text = hinttextbox.hint5;
-			}
-		}
 
-		if (answerID == 3) {
-			
-			if (HintID == 1) {
-				hinttext.GetComponent<Text> ().text = hinttextbox.hint1;
-			} else if (HintID == 2) {
-				hinttext.GetComponent<Text> ().text = hinttextbox.hint2;
-			} else if (HintID == 3) {
-				hinttext.GetComponent<Text> ().text = hinttextbox.hint3;
-			} else if (HintID == 4) {
-				hinttext.GetComponent<Text> ().text = hinttextbox.hint4;
-			} else if (HintID == 5) {
-				hinttext.GetComponent<Text> ().text = hinttextbox.hint5;
-			}
-		}
-
-/*		if (answerID == 3) {
-			
-			if (HintID == 1) {
-				hinttext.GetComponent<Text> ().text = "きりんがすきなひとは、ひだり";				
-			} else if (HintID == 2) {
-				hinttext.GetComponent<Text> ().text = "まさきのみぎは、やすまさ";				
-			} else if (HintID == 3) {
-				hinttext.GetComponent<Text> ().text = "たけしのとなりは、ねこがすき";				
-			} else if (HintID == 4) {
-				hinttext.GetComponent<Text> ().text = "いぬがすきなひとは、きいろがすき";				
-			} else if (HintID == 5) {
-				hinttext.GetComponent<Text> ().text = "あかいろがすきなのは、まさき";
-			}
-		}*/
-
-		if (answerID == 4) {
-			
-			if (HintID == 1) {
-				hinttext.GetComponent<Text> ().text = hinttextbox.hint1;
-			} else if (HintID == 2) {
-				hinttext.GetComponent<Text> ().text = hinttextbox.hint2;
-			} else if (HintID == 3) {
-				hinttext.GetComponent<Text> ().text = hinttextbox.hint3;
-			} else if (HintID == 4) {
-				hinttext.GetComponent<Text> ().text = hinttextbox.hint4;
-			} else if (HintID == 5) {
-				hinttext.GetComponent<Text> ().text = hinttextbox.hint5;
-			}
-		}
 	}
 	
 	

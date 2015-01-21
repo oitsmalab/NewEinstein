@@ -930,7 +930,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HintID: 5
-  answerID: 2
+  answerID: 1
   Text: {fileID: 100000, guid: 1a1719e60c65c144b8599911d7c74876, type: 2}
 --- !u!114 &438696835
 MonoBehaviour:
@@ -1873,7 +1873,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HintID: 4
-  answerID: 2
+  answerID: 1
   Text: {fileID: 100000, guid: 1a1719e60c65c144b8599911d7c74876, type: 2}
 --- !u!114 &855652097
 MonoBehaviour:
@@ -2686,7 +2686,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HintID: 3
-  answerID: 2
+  answerID: 1
   Text: {fileID: 100000, guid: 1a1719e60c65c144b8599911d7c74876, type: 2}
 --- !u!114 &1211878665
 MonoBehaviour:
@@ -3110,7 +3110,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HintID: 1
-  answerID: 2
+  answerID: 1
   Text: {fileID: 100000, guid: 1a1719e60c65c144b8599911d7c74876, type: 2}
 --- !u!1 &1390150516
 GameObject:
@@ -3624,23 +3624,23 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400114, guid: e761503c5240c90478610338ed1ba031, type: 2}
       propertyPath: answerID
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400150, guid: e761503c5240c90478610338ed1ba031, type: 2}
       propertyPath: answerID
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400094, guid: e761503c5240c90478610338ed1ba031, type: 2}
       propertyPath: answerID
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400060, guid: e761503c5240c90478610338ed1ba031, type: 2}
       propertyPath: answerID
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400022, guid: e761503c5240c90478610338ed1ba031, type: 2}
       propertyPath: answerID
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 22400072, guid: e761503c5240c90478610338ed1ba031, type: 2}
       propertyPath: m_Pivot.x
@@ -4402,7 +4402,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HintID: 2
-  answerID: 2
+  answerID: 1
   Text: {fileID: 100000, guid: 1a1719e60c65c144b8599911d7c74876, type: 2}
 --- !u!1 &2107440390
 GameObject:
