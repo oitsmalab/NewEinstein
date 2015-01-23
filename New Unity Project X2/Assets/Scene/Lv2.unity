@@ -455,6 +455,7 @@ GameObject:
   - 224: {fileID: 299214382}
   - 223: {fileID: 299214384}
   - 114: {fileID: 299214383}
+  - 114: {fileID: 299214385}
   m_Layer: 5
   m_Name: Lv2 Canvas
   m_TagString: all
@@ -523,6 +524,27 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
+--- !u!114 &299214385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 299214381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1980459831, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 1
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 2048, y: 1536}
+  m_ScreenMatchMode: 1
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
 --- !u!1 &311748775
 GameObject:
   m_ObjectHideFlags: 0
@@ -3619,7 +3641,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22400072, guid: e761503c5240c90478610338ed1ba031, type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -200
+      value: -132
       objectReference: {fileID: 0}
     - target: {fileID: 22400072, guid: e761503c5240c90478610338ed1ba031, type: 2}
       propertyPath: m_AnchoredPosition.x
@@ -3695,7 +3717,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22400072, guid: e761503c5240c90478610338ed1ba031, type: 2}
       propertyPath: m_SizeDelta.y
-      value: 16
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e761503c5240c90478610338ed1ba031, type: 2}
       propertyPath: m_LocalScale.x
@@ -3996,8 +4018,8 @@ RectTransform:
   m_RootOrder: 5
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: 1800, y: -200}
-  m_SizeDelta: {x: 350, y: 16}
+  m_AnchoredPosition: {x: 1800, y: -132}
+  m_SizeDelta: {x: 350, y: 19}
   m_Pivot: {x: 1.76710951, y: 7.68923807}
 --- !u!114 &1815294353
 MonoBehaviour:

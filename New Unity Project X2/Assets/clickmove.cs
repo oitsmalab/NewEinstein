@@ -40,9 +40,9 @@ public class clickmove : MonoBehaviour {
 		} else if (ID == 4) {
 			Application.LoadLevel("Lv4");//レベル4の問題
 		} else if (ID == 5) {
-			Application.LoadLevel("Lv5");//レベル4の問題
+			Application.LoadLevel("Lv5");
 		} else if (ID == 6) {
-			Application.LoadLevel("Lv6");//レベル4の問題
+			Application.LoadLevel("Lv6");
 		} else if (ID == 0) {
 			Application.LoadLevel("title");//タイトルに戻る
 		}
