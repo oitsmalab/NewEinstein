@@ -411,7 +411,7 @@ RectTransform:
   m_RootOrder: 9
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: 0, y: 655}
+  m_AnchoredPosition: {x: 89, y: 651}
   m_SizeDelta: {x: 815, y: 46}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &127481518
@@ -790,7 +790,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: .0784313753, g: .600000024, b: .458823532, a: 1}
+  m_Color: {r: .929411769, g: .654106081, b: .174948081, a: 1}
   m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
@@ -1239,8 +1239,8 @@ RectTransform:
   m_RootOrder: 8
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: 0, y: 655}
-  m_SizeDelta: {x: 815, y: 46}
+  m_AnchoredPosition: {x: 0, y: 670}
+  m_SizeDelta: {x: 757.099976, y: 46}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &481938755
 MonoBehaviour:
@@ -1403,10 +1403,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4394cd0e60bb1d49a932a5f42b45f14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ID: 0
+  ID: 7
   clearcolor: {r: 1, g: .921568632, b: .0156862754, a: 1}
   Text: {fileID: 0}
-  thisObject: {fileID: 0}
+  thisObject: {fileID: 122584, guid: ea250e3e86cb61b42a4252cc378a10de, type: 2}
+  howto: {fileID: 0}
 --- !u!114 &568527490
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1612,7 +1613,7 @@ MonoBehaviour:
   ID: 3
   MyposX: 0
   MyposY: 0
-  originColor: {r: .0784313753, g: .596078455, b: .458823532, a: 1}
+  originColor: {r: .917647064, g: .639215708, b: .172549024, a: 1}
 --- !u!114 &664795660
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1626,7 +1627,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: .0784313753, g: .600000024, b: .458823532, a: 1}
+  m_Color: {r: .917647064, g: .639215708, b: .172549024, a: 1}
   m_Sprite: {fileID: 21300000, guid: 16dc64f6516501245b2c4da48e735156, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -2060,7 +2061,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: .0784313753, g: .600000024, b: .458823532, a: 1}
+  m_Color: {r: .921568632, g: .643137276, b: .172549024, a: 1}
   m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
@@ -2129,7 +2130,7 @@ MonoBehaviour:
   ID: 2
   MyposX: 0
   MyposY: 0
-  originColor: {r: .0784313753, g: .596078455, b: .458823532, a: 1}
+  originColor: {r: .917647064, g: .639215708, b: .172549024, a: 1}
 --- !u!114 &842447653
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2143,7 +2144,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: .0784313753, g: .600000024, b: .458823532, a: 1}
+  m_Color: {r: .917647064, g: .639215708, b: .172549024, a: 1}
   m_Sprite: {fileID: 21300000, guid: e54f40206742697459eccdba46d14c6d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -2587,7 +2588,7 @@ MonoBehaviour:
   ID: 1
   MyposX: 0
   MyposY: 0
-  originColor: {r: .0784313753, g: .600000024, b: .458823532, a: 1}
+  originColor: {r: .917647064, g: .639215708, b: .172549024, a: 1}
 --- !u!114 &1151177268
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2601,7 +2602,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: .0784313753, g: .603921592, b: .458823532, a: 1}
+  m_Color: {r: .917647064, g: .639215708, b: .172549024, a: 1}
   m_Sprite: {fileID: 21300000, guid: 8a2691c4bec378d4dac9fb94e776683a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -4087,8 +4088,8 @@ RectTransform:
   m_RootOrder: 3
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: -230.600006, y: -140.160004}
-  m_SizeDelta: {x: 30.6000004, y: 16.7000008}
+  m_AnchoredPosition: {x: -225.059998, y: -139}
+  m_SizeDelta: {x: 41, y: 24}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &1875813081
 MonoBehaviour:
@@ -4798,7 +4799,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: .0784313753, g: .596078455, b: .458823532, a: 1}
+  m_Color: {r: .925490201, g: .647058845, b: .172549024, a: 1}
   m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0

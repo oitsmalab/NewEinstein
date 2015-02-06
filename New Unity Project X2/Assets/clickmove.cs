@@ -28,6 +28,9 @@ public class clickmove : MonoBehaviour {
 	HintTextBox hinttextbox;
 
 	public GameObject thisObject;
+	public GameObject howto;
+	
+
 
 	public void OnClick () {
 
@@ -45,7 +48,34 @@ public class clickmove : MonoBehaviour {
 			Application.LoadLevel("Lv6");
 		} else if (ID == 0) {
 			Application.LoadLevel("title");//タイトルに戻る
+		} else if (ID == 7) {
+			GameObject gotitle = Instantiate(thisObject) as GameObject;
+
+			var canvas = FindInParents<Canvas>(gameObject);
+			gotitle.transform.SetParent (canvas.transform, false);
+			gotitle.transform.SetAsLastSibling();
+			gotitle.transform.position = new Vector2(300, 350);
+			gotitle.transform.localScale = new Vector2(1, 1);
+
+		} else if (ID == 8) {
+			GameObject tbn = GameObject.Find("titlebutton(Clone)");
+			Destroy(tbn);
+
+			GameObject htb = GameObject.Find("howtobutton(Clone)");
+			Destroy(htb);
+
+		} else if (ID == 9) {
+			GameObject htabout = Instantiate(howto) as GameObject;
+			
+			var canvas = FindInParents<Canvas>(gameObject);
+			htabout.transform.SetParent (canvas.transform, false);
+			htabout.transform.SetAsLastSibling();			
+			htabout.transform.position = new Vector2(300, 350);
+			htabout.transform.localScale = new Vector2(2, 2);
+
 		}
+
+
 		}
 
 
@@ -84,4 +114,22 @@ public class clickmove : MonoBehaviour {
 	void Update () {
 	
 	}
+	static public T FindInParents<T>(GameObject go) where T : Component
+		//GameObjectの親であり、型がTであるものを探しにいく
+	{
+		if (go == null) return null;
+		var comp = go.GetComponent<T>();
+		
+		if (comp != null)
+			return comp;
+		
+		Transform t = go.transform.parent;
+		while (t != null && comp == null)
+		{
+			comp = t.gameObject.GetComponent<T>();
+			t = t.parent;
+		}
+		return comp;
+	}
 }
+
