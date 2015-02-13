@@ -54,7 +54,7 @@ public class clickmove : MonoBehaviour {
 			var canvas = FindInParents<Canvas>(gameObject);
 			gotitle.transform.SetParent (canvas.transform, false);
 			gotitle.transform.SetAsLastSibling();
-			gotitle.transform.position = new Vector2(300, 350);
+			gotitle.transform.position = new Vector2(Screen.width / 2,Screen.height / 2);
 			gotitle.transform.localScale = new Vector2(1, 1);
 
 		} else if (ID == 8) {
@@ -70,8 +70,8 @@ public class clickmove : MonoBehaviour {
 			var canvas = FindInParents<Canvas>(gameObject);
 			htabout.transform.SetParent (canvas.transform, false);
 			htabout.transform.SetAsLastSibling();			
-			htabout.transform.position = new Vector2(300, 350);
-			htabout.transform.localScale = new Vector2(2, 2);
+			htabout.transform.position = new Vector2(Screen.width / 2,Screen.height / 2);
+			htabout.transform.localScale = new Vector2(1, 1);
 
 		}
 
